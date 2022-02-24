@@ -1,0 +1,16 @@
+body {
+    background-image: url("Assets/BG.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+nav {
+    margin-left: 1000px;
+    display: inline-block;
+}
+
+a {
+    margin-left: 10px;
+    color: white;
+}
