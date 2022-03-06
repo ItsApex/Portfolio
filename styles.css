@@ -1,16 +1,110 @@
-body {
-    background-image: url("Assets/BG.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    color: white;
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+    margin: 0%;
+    
 }
 
-nav {
-    margin-left: 1000px;
+div.as{
+    
+    margin: 0px 15px 0px 15px;
+    text-decoration: none;
+    font-size: 20px;
     display: inline-block;
+    position: relative;;
+    float: left;
+    font-family: 'Inter';
+    font-weight: 500;
+    padding: 30px 0% 0px 5%;
 }
 
-a {
-    margin-left: 10px;
+nav{
+    
+    float: right;
+    font-family: 'Inter';
+    font-weight: 200;
+    padding: 30px 5% 0px 0px;
+}
+
+nav > a{
+    margin: 0px 15px 0px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
     color: white;
+}
+
+nav > a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav > a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+section.First-Page {
+    background-color: #111111;
+    height: 100vh;
+    width: auto;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+div.text-first-page {
+    padding-top: 15%;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 200;
+
+}
+
+div.name {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-top: 20px;
+    margin:0% 26% 0% 26% ;
+    background-image: linear-gradient(to right, #9845E8, #33D2FF, #DD5789); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 100px;
+    transition: 1s;
+}
+
+div.name:hover {
+    margin:0% 10% 0% 10% ;
+    font-size: 120px;
+
+}
+
+
+div.about {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 50px 100px 50px 100px;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 200;
+}
+
+section.Second-Page{
+    color: white;
+    font-size: 100px;
+    font-family: 'Inter';
+    font-weight: 200;
 }
