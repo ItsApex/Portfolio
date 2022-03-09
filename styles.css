@@ -1,6 +1,7 @@
 *{
     scroll-behavior: smooth;
 }
+
 body{
     background: black;
     margin: 0%;
@@ -8,12 +9,11 @@ body{
 }
 
 div.as{
-    
     margin: 0px 15px 0px 15px;
     text-decoration: none;
     font-size: 20px;
     display: inline-block;
-    position: relative;;
+    position: relative;
     float: left;
     font-family: 'Inter';
     font-weight: 500;
@@ -21,7 +21,6 @@ div.as{
 }
 
 nav{
-    
     float: right;
     font-family: 'Inter';
     font-weight: 200;
@@ -58,7 +57,7 @@ nav > a:hover:after {
 
 section.First-Page {
     background-color: #111111;
-    height: 100vh;
+    height: 130vh;
     width: auto;
     font-size: 16px;
     text-align: center;
@@ -92,7 +91,6 @@ div.name:hover {
 
 }
 
-
 div.about {
     margin-left: 5%;
     margin-right: 5%;
@@ -102,9 +100,138 @@ div.about {
     font-weight: 200;
 }
 
-section.Second-Page{
-    color: white;
-    font-size: 100px;
+section.buttonsone{
+    position: relative;
+    display: inline-flex;
+    padding: 15% 0% 0px 0px;
+    text-align:center;
+    z-index: 0;
+}
+
+button#links {
+    outline: none;
+    border: none;
+    font-size: 20px;
     font-family: 'Inter';
     font-weight: 200;
+    margin: 0% 5px 0% 5px;
+    padding: 15px 50px 15px 50px;
+    color: white;
+    /* font-family: 'Inter'; */
+    --borderWidth: 3px;
+    background: #111111;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+
+
+button span.email {
+    display: inline-flex;
+    height: 100%;
+    width: 30px;
+    background: url("Assets/email.png") no-repeat;
+    float: left;
+    /* padding: 1px 5px 1px 5px; */
+    background-size: 25px 25px;
+    
+}
+
+
+button span.linkedIn {
+    display: inline-flex;
+    height: 100%;
+    width: 25px;
+    background: url("Assets/linkedin.png") no-repeat;
+    float: left;
+    /* padding: 1px 5px 1px 5px; */
+    background-size: 20px 20px;
+}
+
+button span.youtube {
+    display: inline-flex;
+    height: 100%;
+    width: 36px;
+    background: url("Assets/youtube.png") no-repeat;
+    float: left;
+    /* padding: 1px 5px 1px 5px; */
+    background-size: 31px 24px;
+}
+
+button span.github {
+    display: inline-flex;
+    height: 100%;
+    width: 30px;
+    background: url("Assets/github.png") no-repeat;
+    float: left;
+    /* padding: 1px 5px 1px 5px; */
+    background-size: 25px 25px;
+}
+
+button.one:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    animation: animatedgradient 3s ease infinite;
+    z-index: -1;
+    background-size: 400% 400%;
+}
+
+button.two:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg,  #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82,#f79533);
+    border-radius: calc(2 * var(--borderWidth));
+    animation: animatedgradient 3s ease infinite;
+    z-index: -1;
+    background-size: 400% 400%;
+}
+
+button.three:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg,  #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82,#f79533,#f37055);
+    border-radius: calc(2 * var(--borderWidth));
+    animation: animatedgradient 3s ease infinite;
+    z-index: -1;
+    background-size: 400% 400%;
+}
+
+button.four:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg,  #a166ab, #5073b8, #1098ad, #07b39b, #6fba82,#f79533,#f37055,#ef4e7b );
+    border-radius: calc(2 * var(--borderWidth));
+    animation: animatedgradient 3s ease infinite;
+    z-index: -1;
+    background-size: 400% 400%;
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
