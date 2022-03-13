@@ -8,6 +8,8 @@ body{
     
 }
 
+/* -------------------- First Page ----------------------------------------------------------- */
+
 div.as{
     margin: 0px 15px 0px 15px;
     text-decoration: none;
@@ -72,6 +74,7 @@ div.text-first-page {
 
 }
 
+
 div.name {
     font-family: 'Montserrat';
     font-weight: bold;
@@ -85,11 +88,12 @@ div.name {
     transition: 1s;
 }
 
+
 div.name:hover {
     margin:0% 10% 0% 10% ;
     font-size: 120px;
-
 }
+
 
 div.about {
     margin-left: 5%;
@@ -100,6 +104,7 @@ div.about {
     font-weight: 200;
 }
 
+
 section.buttonsone{
     position: relative;
     display: inline-flex;
@@ -107,6 +112,7 @@ section.buttonsone{
     text-align:center;
     z-index: 0;
 }
+
 
 button#links {
     outline: none;
@@ -129,7 +135,7 @@ button span.email {
     display: inline-flex;
     height: 100%;
     width: 30px;
-    background: url("Assets/email.png") no-repeat;
+    background: url("Assets/twitter.png") no-repeat;
     float: left;
     /* padding: 1px 5px 1px 5px; */
     background-size: 25px 25px;
@@ -209,6 +215,7 @@ button.three:after {
     background-size: 400% 400%;
 }
 
+
 button.four:after {
     content: '';
     position: absolute;
@@ -235,3 +242,37 @@ button.four:after {
         background-position: 0% 50%;
     }
 }
+
+/* -------------------- Second Page ----------------------------------------------------------- */
+section#expereience {
+    height: 800px;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 300;
+    padding: 10% 0% 0% 10%;
+}
+
+div#ListOne {
+    box-sizing: border-box;
+    outline: 0;
+    border-left: 2px solid #1F1E1E;
+    width: 250px;
+    height: 300px;
+    font-size: 20px;
+    overflow-y: auto;
+}
+
+div#ListOne p {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 20px 0px 20px 20px;
+    /* border-left: 1px solid white; */
+}
+
+div#ListOne p:hover{
+    background: #1F1E1E;
+    transition: 0.3s ease;
+}
+
+
