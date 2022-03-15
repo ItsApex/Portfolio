@@ -23,4 +23,21 @@ githubBtn.addEventListener('click', function() {
     window.open("https://github.com/ItsApex", "_blank");
 });
 
+// Side Nav Toogle Buttons
+const items = document.querySelectorAll('.menu-item');
+   
+// on click
+  for (let item of items) {
+      if (item.querySelector(".sub-menu")) {
+        item.addEventListener("click", function() {
+            item.className = 'sub-menu-active';
+        });
+      }
 
+      if (item.querySelector(".sub-menu-active")) {
+        item.addEventListener("click", function() {
+            console.log('lk')
+            item.className = 'sub-menu';
+        });
+      }   
+  }

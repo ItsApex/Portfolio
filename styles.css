@@ -246,33 +246,80 @@ button.four:after {
 /* -------------------- Second Page ----------------------------------------------------------- */
 section#expereience {
     height: 800px;
+    box-sizing: border-box;
     color: white;
-    font-family: 'Inter';
-    font-weight: 300;
     padding: 10% 0% 0% 10%;
 }
 
-div#ListOne {
-    box-sizing: border-box;
-    outline: 0;
-    border-left: 2px solid #1F1E1E;
-    width: 250px;
-    height: 300px;
-    font-size: 20px;
-    overflow-y: auto;
+nav#side-nav {
+    float: left;
+    background: #222;
+    padding: 0px 50px;
+    
 }
 
-div#ListOne p {
-    position: relative;
+a.a-tag {
+    color: white;
+    text-decoration: none;
+}
+
+a.a-tag-name {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu,
+.sub-menu {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
     display: block;
-    cursor: pointer;
-    padding: 20px 0px 20px 20px;
-    /* border-left: 1px solid white; */
+    padding: 15x 5px;
 }
 
-div#ListOne p:hover{
-    background: #1F1E1E;
-    transition: 0.3s ease;
+.menu li.sub-menu a {
+    padding: 15px;
 }
 
+.sub-menu {
+    display:  none;
+}
 
+.sub-menu-active .sub-menu {
+    display: block;
+}
+
+.sub-menu-active {
+    background-color: #111;
+    border-radius: 3px;
+}
+
+.menu-item {
+    /* width: 80px;
+    text-align: center; */
+}
+
+.menu-item > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: white;
+    padding-left: 5px;
+}
+
+.sub-menu-item a {
+    padding: 10px 15px;
+}
