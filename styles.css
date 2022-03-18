@@ -341,13 +341,14 @@ ul.menu {
     padding: 15px 60px 15px 10px;
     width: 120px;
     transition: 0.5s;
-    /* border-left: #646464 solid; */
+    border-left: #646464 solid;
     border-width: 1px;
     
 }
 
 .sub-menu-item a:hover {
     border-left: #f1f1f1 solid;
+    border-width: 1px;
     background-color: #111111;
 }
 
