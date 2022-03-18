@@ -250,10 +250,10 @@ button.four:after {
 
 /* -------------------- Second Page ----------------------------------------------------------- */
 section#expereience {
-    height: 800px;
+    height: 500px;
     box-sizing: border-box;
     color: white;
-    padding: 5% 0% 0% 10%;
+    padding: 5% 0% 10% 10%;
     transition: all 2s;
 }
 
@@ -340,9 +340,9 @@ ul.menu {
     margin: 0px 0px 0px 50%;
     padding: 15px 60px 15px 10px;
     width: 120px;
-    transition: 0.5s;
+    transition: 0.5s ;
     border-left: #646464 solid;
-    border-width: 1px;
+    border-width: 1px ;
     
 }
 
@@ -364,7 +364,7 @@ a.a-tag-name{
     font-family: 'Inter';
     font-weight: 300;
     padding: 15px 10px 15px 10px;
-    transition: 0.5s;
+    transition: 0.5s ease-out;
 }
 
 a.a-tag-name:hover{
@@ -372,4 +372,53 @@ a.a-tag-name:hover{
     align-items: center;
     background-color: #111111;
 
+}
+
+/* --------------------------------------------------------------info part------------------------------------------------------------------------ */
+
+ul.info{
+    position: relative;
+    left: 300px; 
+    top: 20px;
+    width:800px;
+    font-size: 25px;
+    font-family: 'Inter';
+    font-weight: 300;   
+
+}
+
+div.date{
+    position: absolute;
+    padding-top: 8px;
+    float: right ;
+    left: 650px;
+    font-weight: 200;   
+    font-size: 18px;
+    color: #6CACE4;
+
+}
+
+
+div.Para-info{
+    position: absolute;
+    padding: 20px 0 0 0 ;
+    font-size: 17px;
+    font-weight: 200;   
+
+}
+
+
+/* -------------------- Third Page ----------------------------------------------------------- */
+section#Projects {
+    height: 800px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 5% 0 0 10% ;
+    color: white;
+    transition: all 2s;
+}
+
+hr.basicline{
+    align-items: center;
+    width: 90%;
 }

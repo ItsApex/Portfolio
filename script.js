@@ -28,7 +28,7 @@ const items = document.querySelectorAll('.menu-item');
 
 // on click
 function toggleItem() {
-    if (this.classList.contains("sub-menu-active")) {
+    if (this.classList.contains(("sub-menu-active"))) {
         this.classList.remove("sub-menu-active");
     } else {
         this.classList.remove();
@@ -40,4 +40,32 @@ for (let item of items) {
     if (item.querySelector(".sub-menu")) {
         item.addEventListener("click", toggleItem, false);
     }   
+}
+
+// View port for each element
+
+const paraInfo = document.getElementById('para-info');
+const HeadingInfo = document.getElementById('Heading-info');
+
+let element = [
+    'premier-pro',
+    'after-effects',
+    'vegas-pro',
+    'filmora'
+];
+    
+let innertext= [
+    '- Premier Pro <br><br> - Noice',
+    ' - After Efects <br><br> - Noice',
+    ' - Vegas Pro <br><br> - lets go ',
+    '- Filmora <br><br> - DOnt know '
+];
+
+for (let item of element) {
+    document.getElementById(item).addEventListener('click', () => {
+        console.log(HeadingInfo.innerHTML)
+        HeadingInfo.innerHTML = `${document.getElementById(item).innerText}`;
+        let temps = element.indexOf(item);
+        paraInfo.innerHTML = `${innertext[temps]}`;
+    });
 }
