@@ -8,6 +8,11 @@ body{
     
 }
 
+.Heading{
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
 /* -------------------- First Page ----------------------------------------------------------- */
 
 div.as{
@@ -248,44 +253,44 @@ section#expereience {
     height: 800px;
     box-sizing: border-box;
     color: white;
-    padding: 10% 0% 0% 10%;
+    padding: 5% 0% 0% 10%;
+    transition: all 2s;
 }
 
 nav#side-nav {
     float: left;
-    background: #222;
-    padding: 0px 50px;
-    
+    position:absolute;
+    padding: 15px 0px;
+    width: 220px;
+    height: 600px;
 }
 
 a.a-tag {
+    float: left;
     color: white;
     text-decoration: none;
+    width: 200px;
 }
 
-a.a-tag-name {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-family: 'Inter';
-    font-size: 16px;
-    font-weight: 500;
-}
+
 
 .menu,
 .sub-menu {
     list-style-type: none;
 }
 
-.menu {
+ul.menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 
 .menu li a {
     display: block;
     padding: 15x 5px;
+    
 }
 
 .menu li.sub-menu a {
@@ -293,33 +298,77 @@ a.a-tag-name {
 }
 
 .sub-menu {
-    display:  none;
+    display: none;
+    width: 100px;
+    padding: 0;
+    
+}
+
+.sub-menu-active{
+    transition: height .4s ease;
 }
 
 .sub-menu-active .sub-menu {
     display: block;
-}
+    width: 100px;
 
-.sub-menu-active {
-    background-color: #111;
-    border-radius: 3px;
 }
 
 .menu-item {
-    /* width: 80px;
-    text-align: center; */
+    text-align: center;
+    
 }
 
 .menu-item > a::after {
+    float: right;
     font-family: "Font Awesome 5 Free";
     font-size: 12px;
     line-height: 16px;
     font-weight: 900;
     content: "\f078";
     color: white;
-    padding-left: 5px;
+    padding-left: 0px;
+    transition: all 2s;
 }
 
 .sub-menu-item a {
-    padding: 10px 15px;
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 200;
+    margin: 0px 0px 0px 50%;
+    padding: 15px 60px 15px 10px;
+    width: 120px;
+    transition: 0.5s;
+    /* border-left: #646464 solid; */
+    border-width: 1px;
+    
+}
+
+.sub-menu-item a:hover {
+    border-left: #f1f1f1 solid;
+    background-color: #111111;
+}
+
+/* ------------------------------------------------------Final CSS Styles 2nd Page------------------------------------------------------------ */
+
+a.a-tag-name{
+    border-left: #646464 solid;
+    border-width: 2px;
+    text-align: left;
+    align-items: center;
+    width: 220px;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 300;
+    padding: 15px 10px 15px 10px;
+    transition: 0.5s;
+}
+
+a.a-tag-name:hover{
+    border-left: #f1f1f1 solid;
+    align-items: center;
+    background-color: #111111;
+
 }
