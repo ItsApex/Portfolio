@@ -116,14 +116,22 @@
         <div class="LastCard">
             <div class="contact-info">
                 <div class="contacts">
-                    <div class="email"> Email </div>
-                    <textarea spellcheck="false"  placeholder="Email" name="" id="textarea" cols="1" rows="2" required></textarea>
-                    <div class="Message">Message</div>
-                    <textarea spellcheck="false"  placeholder="Message" name="" id="textarea" cols="20" rows="15" required></textarea>
-                    <br>
-                    <button class="Submit"> Submit </button>
+                    <form action="/" method="post" enctype="text/plain" >
+                        <div class="email"> Email </div>
+                        <textarea class="textarea" spellcheck="false"  placeholder="Email" name="email" id="email" cols="1" rows="2" required></textarea>
+                        <div class="Message">Message</div>
+                        <textarea class="textarea" spellcheck="false"  placeholder="Message" name="message" id="message" cols="20" rows="15" required></textarea>
+                        <br>
+                        <input class="CardsButton" name="submit" type="submit" value="Submit" onclick="sendEmail()">
+                    </form>
                 </div>
-                <div class="Description">Description</div>
+                <div id="divider"></div>
+                <div class="Description">While the YouTube channel description talks about the body of video content that you upload, each video will also need a unique description to increase the likelihood of your video getting 
+                    found when someone is searching for a particular topic.
+                    Ultimately, if you're ready to begin using YouTube to attract and convert an audience, it's critical you optimize your video descriptions for SEO. If you're unsure how to start crafting compelling YouTube descriptions, keep reading -- here, we'll explore various t 
+                    <br><br>
+                    Bbye!!
+                </div>
             </div>
         </div>
         </section>
@@ -131,5 +139,6 @@
     <footer>
     </footer>
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

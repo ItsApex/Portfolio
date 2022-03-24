@@ -500,17 +500,35 @@ section.Fourth-Page {
 div.LastCard {
     align-content: center;
     margin: 5% 15% 0 15%;
-    border: 1px solid white;
-    height: 500px;
+    /* border: 1px solid white; */
+    height: 550px;
     width: auto;
-    border-radius: 10px;
+    /* border-radius: 15px; */
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     border: solid 3px transparent;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(45deg, #3375c2, #c548ff);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 1000px 1000px 100px rgb(0, 0, 0) inset;
+    box-shadow: 1000px 1000px 100px rgb(0, 0, 0) inset; 
+    --borderWidth: 3px;
+    background: rgb(19, 18, 18);
+    position: relative;
+    border-radius: 10px;
+    border: solid 1px rgba(255, 255, 255, 0);
 }
+div.LastCard:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 10px;
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
 
 div.contacts{
     
@@ -521,34 +539,97 @@ div.contacts{
     height: auto;
     float: left;
     text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
 }
 
 div.Description{
     /* border: rgb(255, 255, 255) 2px solid; */
-    padding: 10% 0% 10% 0% ;
-    margin: 10% 0 10% 0 ;
-    position: relative;
+    padding: 5% 5% 10% 5% ;
+    margin: 6% 0 10% 0 ;
+    position: absolute;
+    left: 55.5%;
     height: auto;
-    width: 49%;
-    font-size: 20px;
+    width: 300px;
+    font-size: 23px;
     font-weight: 300;
     float: right;
     text-align: center;
+    font-size: 16px;
 }
 
-textarea#textarea{
+textarea.textarea{
+    color: rgb(255, 255, 255);  
+    text-align: center;
+    font-family: 'Inter';
     margin: 10px;
-    background-color: grey;
+    background-color: rgba(255, 255, 255, 0.062);
     width: 60%;
     resize: none;
     outline: none;
-    border-radius: 5px;
-    max-height: 330px;
-    border: 1px solid #bfbfbf;
+    border: none;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(220deg, #3375c2, #c548ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 1000px 1000px 100px rgb(0, 0, 0) inset;
+    
+    border-radius: 10px; */
+    /* border: solid 1px rgba(255, 255, 255, 0.664); */
 }
 
 textarea::placeholder {
-    color: white;  
+    color: rgba(255, 255, 255, 0.425);   
+    text-align: center;
+    margin: auto;
     font-family: 'Inter';
+    font-size: 15px;
+}
 
-  }
+input.CardsButton{
+    outline: none;
+    border: none;
+    color: white;
+    position: relative;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 300;
+    /* margin: 10px 0 0 0; */
+    padding: 10px 20px 10px 20px;
+    /* border-radius: 2px; */
+    box-shadow: 0 0 10px 0 rgba(157, 96, 212, 0.5);
+    /* border: solid 0px transparent; */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.425), rgba(255, 255, 255, 0.425)), linear-gradient(45deg, #ffffff, #ffffff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 0px 100px 100px rgb(0, 0, 0) inset;
+
+    /* float: left; */
+    transition: 0.5s;
+}
+
+
+input.CardsButton:hover {
+    box-shadow: none;
+    color: black;
+}
+
+div#divider {
+    position: absolute;
+    /* border-left: 2px solid white; */
+    margin-top: 52px;
+    left: 50%;
+    height: 450px;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(220deg, #3375c2, #c548ff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 1000px 1000px 100px rgb(0, 0, 0) inset;
+    border-left: solid 2px rgba(255, 255, 255, 0);
+    /* border-radius: 10px;/ */
+}
+
+

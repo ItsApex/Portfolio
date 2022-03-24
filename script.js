@@ -69,3 +69,19 @@ for (let item of element) {
         paraInfo.innerHTML = `${innertext[temps]}`;
     });
 }
+
+// Email
+function sendEmail() {
+    var message = document.getElementById('message').value;
+    var email = document.getElementById('email').value;
+    var emailBody = "Email: " + email + "<br> Message: " + message;
+    Email.send({
+        Host : "smtp.mailtrap.io",
+        Username : "ec4aec47e748d6",
+        Password : "fc1d14322f426a",
+        To : 'aryansingh6011@gmail.com',
+        From : "sender@example.com",
+        Subject : "Test email",
+        Body : emailBody
+    });
+}
