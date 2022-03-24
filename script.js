@@ -31,19 +31,18 @@ function toggleItem() {
     if (this.classList.contains(("sub-menu-active"))) {
         this.classList.remove("sub-menu-active");
     } else {
-        this.classList.remove();
         this.classList.add("sub-menu-active");
     }
 }
 
+/* Event listener */
 for (let item of items) {
     if (item.querySelector(".sub-menu")) {
         item.addEventListener("click", toggleItem, false);
-    }   
+    }
 }
 
 // View port for each element
-
 const paraInfo = document.getElementById('para-info');
 const HeadingInfo = document.getElementById('Heading-info');
 
