@@ -19,14 +19,18 @@ div.as{
     margin: 0px 15px 0px 15px;
     text-decoration: none;
     font-size: 20px;
-    display: inline-block;
-    position: relative;
     float: left;
+    position: relative;
     font-family: 'Inter';
     font-weight: 500;
     padding: 30px 0% 0px 5%;
+    transition: 1s;
 }
 
+div.as:hover{
+    margin: 0px 15px 0px 15px;
+    color: #6CACE4;
+}
 nav{
     float: right;
     font-family: 'Inter';
@@ -254,7 +258,6 @@ section#expereience {
     box-sizing: border-box;
     color: white;
     padding: 5% 0% 10% 10%;
-    transition: all 2s;
 }
 
 nav#side-nav {
@@ -272,11 +275,14 @@ a.a-tag {
     width: 200px;
 }
 
-
-
 .menu,
 .sub-menu {
     list-style-type: none;
+}
+
+.sub-menu{
+    opacity: 100;
+    transition: 2s;
 }
 
 ul.menu {
@@ -297,26 +303,20 @@ ul.menu {
     padding: 15px;
 }
 
+
 .sub-menu {
     display: none;
     width: 100px;
     padding: 0;
-    
-}
-
-.sub-menu-active{
-    transition: height .4s ease;
 }
 
 .sub-menu-active .sub-menu {
     display: block;
     width: 100px;
-
 }
 
 .menu-item {
     text-align: center;
-    
 }
 
 .menu-item > a::after {
@@ -328,7 +328,6 @@ ul.menu {
     content: "\f078";
     color: white;
     padding-left: 0px;
-    transition: all 2s;
 }
 
 .sub-menu-item a {
@@ -343,7 +342,7 @@ ul.menu {
     transition: 0.5s ;
     border-left: #646464 solid;
     border-width: 1px ;
-    
+
 }
 
 .sub-menu-item a:hover {
@@ -351,6 +350,8 @@ ul.menu {
     border-width: 1px;
     background-color: #111111;
 }
+
+
 
 /* ------------------------------------------------------Final CSS Styles 2nd Page------------------------------------------------------------ */
 
@@ -491,15 +492,19 @@ button.CardsButton:hover {
 section.Fourth-Page {
     border: 0px;
     color: white;
-    height: 700px;
+    height: 680px;
     font-family: 'Inter';
     align-content: center;
+}
 
+#contact-heading {
+    text-align: center;
+    margin: 3%;
 }
 
 div.LastCard {
     align-content: center;
-    margin: 5% 15% 0 15%;
+    margin: 0% 15% 0 15%;
     /* border: 1px solid white; */
     height: 550px;
     width: auto;
@@ -617,6 +622,8 @@ input.CardsButton:hover {
     box-shadow: none;
     color: black;
 }
+
+/* -------------------------------Forth Page------------------------------------------ */
 
 div#divider {
     position: absolute;

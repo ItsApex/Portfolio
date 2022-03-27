@@ -25,13 +25,17 @@ githubBtn.addEventListener('click', function() {
 
 // Side Nav Toogle Buttons
 const items = document.querySelectorAll('.menu-item');
+const menu = document.querySelector(".menu");
 
 // on click
 function toggleItem() {
     if (this.classList.contains(("sub-menu-active"))) {
-        this.classList.remove("sub-menu-active");
+        this.classList.toggle("sub-menu-active");
+    } else if (menu.querySelector(".sub-menu-active")) {
+        menu.querySelector(".sub-menu-active").classList.toggle("sub-menu-active");
+        this.classList.toggle("sub-menu-active");
     } else {
-        this.classList.add("sub-menu-active");
+        this.classList.toggle("sub-menu-active");
     }
 }
 
@@ -41,6 +45,8 @@ for (let item of items) {
         item.addEventListener("click", toggleItem, false);
     }
 }
+
+
 
 // View port for each element
 const paraInfo = document.getElementById('para-info');
