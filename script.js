@@ -24,47 +24,88 @@ githubBtn.addEventListener('click', function() {
 });
 
 // Side Nav Toogle Buttons
-const items = document.querySelectorAll('.menu-item');
-const menu = document.querySelector(".menu");
+// const items = document.querySelectorAll('.menu-item');
+// const menu = document.querySelector(".menu");
 
 // on click
-function toggleItem() {
-    if (this.classList.contains(("sub-menu-active"))) {
-        this.classList.toggle("sub-menu-active");
-    } else if (menu.querySelector(".sub-menu-active")) {
-        menu.querySelector(".sub-menu-active").classList.toggle("sub-menu-active");
-        this.classList.toggle("sub-menu-active");
-    } else {
-        this.classList.toggle("sub-menu-active");
-    }
-}
+// function toggleItem() {
+//     if (this.classList.contains(("sub-menu-active"))) {
+//         this.classList.toggle("sub-menu-active");
+//     } else if (menu.querySelector(".sub-menu-active")) {
+//         menu.querySelector(".sub-menu-active").classList.toggle("sub-menu-active");
+//         this.classList.toggle("sub-menu-active");
+//     } else {
+//         this.classList.toggle("sub-menu-active");
+//     }
+// }
 
 /* Event listener */
-for (let item of items) {
-    if (item.querySelector(".sub-menu")) {
-        item.addEventListener("click", toggleItem, false);
-    }
-}
+// for (let item of items) {
+//     if (item.querySelector(".sub-menu")) {
+//         item.addEventListener("click", toggleItem, false);
+//     }
+// }
 
+$(document).ready(function(){
+    $("#test").click(function(){
+        $("#submenu-1").slideToggle("slow");
+    });
 
+    $("#test2").click(function(){
+        $("#submenu-2").slideToggle("slow");
+    });
+
+    $("#test3").click(function(){
+        $("#submenu-3").slideToggle("slow");
+    });
+});
 
 // View port for each element
 const paraInfo = document.getElementById('para-info');
 const HeadingInfo = document.getElementById('Heading-info');
+const dateinfo = document.getElementById("date");
 
 let element = [
+    'c++',
+    'javaScript',
+    'python',
+    'flutter',  
     'premier-pro',
     'after-effects',
     'vegas-pro',
-    'filmora'
+    'filmora',
+    'photoshop',
+    'illustrator',
+    'figma'
 ];
-    
+
 let innertext= [
+    '- C++ <br><br> - Hello World',
+    '- JavaScript <br><br> - Hello World',
+    '- Python <br><br> - Hello World',
+    '- flutter <br><br> - Hello World',
     '- Premier Pro <br><br> - Noice',
     ' - After Efects <br><br> - Noice',
     ' - Vegas Pro <br><br> - lets go ',
-    '- Filmora <br><br> - DOnt know '
+    '- Filmora <br><br> - DOnt know ',
+    '- Photoshop <br><br> - Expert ',
+    '- Illustrator <br><br> - Expert ',
+    '- Figma <br><br> - Expert '
 ];
+
+let usedate =[
+    'Jun 2021 - Present',
+    'March 2019 - Present',
+    'June 2071 - Present',
+    'Jun 2011 - Present',
+    'Jun 2022 - Present',
+    'March 2041 - Present',
+    'Dec 2001 - Present',
+    'Jun 2031 - Present',
+    'Jun 2024 - Present',
+    'Jun 2011 - Present',
+    'Jun 2012 - Present'
+]
 
 for (let item of element) {
     document.getElementById(item).addEventListener('click', () => {
@@ -72,6 +113,7 @@ for (let item of element) {
         HeadingInfo.innerHTML = `${document.getElementById(item).innerText}`;
         let temps = element.indexOf(item);
         paraInfo.innerHTML = `${innertext[temps]}`;
+        dateinfo.innerHTML = `${usedate[temps]}`;
     });
 }
 

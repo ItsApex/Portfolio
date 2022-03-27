@@ -254,25 +254,27 @@ button.four:after {
 
 /* -------------------- Second Page ----------------------------------------------------------- */
 section#expereience {
-    height: 500px;
+    height: auto;
     box-sizing: border-box;
     color: white;
     padding: 5% 0% 10% 10%;
+    min-height: 450px;
+    transition: 1s;
 }
 
 nav#side-nav {
     float: left;
-    position:absolute;
-    padding: 15px 0px;
-    width: 220px;
-    height: 600px;
+    position:relative;
+    padding: 15px 0px 50px 0px;
+    width: 20px;
+    height: auto;
+    transition: 1s;
 }
 
 a.a-tag {
     float: left;
     color: white;
     text-decoration: none;
-    width: 200px;
 }
 
 .menu,
@@ -280,16 +282,12 @@ a.a-tag {
     list-style-type: none;
 }
 
-.sub-menu{
-    opacity: 100;
-    transition: 2s;
-}
+
 
 ul.menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     margin: 0;
 }
 
@@ -305,14 +303,14 @@ ul.menu {
 
 
 .sub-menu {
+    float: left;
+    /* width: 100px; */
     display: none;
-    width: 100px;
     padding: 0;
 }
 
 .sub-menu-active .sub-menu {
     display: block;
-    width: 100px;
 }
 
 .menu-item {
@@ -336,7 +334,7 @@ ul.menu {
     font-size: 18px;
     font-family: 'Inter';
     font-weight: 200;
-    margin: 0px 0px 0px 50%;
+    margin: 0px 0px 0px 50px;
     padding: 15px 60px 15px 10px;
     width: 120px;
     transition: 0.5s ;
@@ -551,7 +549,7 @@ div.contacts{
 
 div.Description{
     /* border: rgb(255, 255, 255) 2px solid; */
-    padding: 5% 5% 10% 5% ;
+    padding: 2.7% 5% 10% 5% ;
     margin: 6% 0 10% 0 ;
     position: absolute;
     left: 55.5%;
@@ -561,7 +559,7 @@ div.Description{
     font-weight: 300;
     float: right;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 textarea.textarea{
