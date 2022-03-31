@@ -66,8 +66,8 @@ const HeadingInfo = document.getElementById('Heading-info');
 const dateinfo = document.getElementById("date");
 
 let element = [
-    'c++',
     'javaScript',
+    'c++',
     'python',
     'flutter',  
     'premier-pro',
@@ -80,9 +80,9 @@ let element = [
 ];
 
 let innertext= [
+    '- I have over 6 months of experience and have built a couple successful projects. This is my preferred language.<br><br> - Rating : 6/10',
     '- C++ <br><br> - Hello World',
-    '- JavaScript <br><br> - Hello World',
-    '- Python <br><br> - Hello World',
+    '- Have over 2 years of experience and a significant number of projects under my portfolio. I went through a lot of libraries and have aquired a lot of knowelage in this language.  <br><br> -  Rating : 8/10',
     '- flutter <br><br> - Hello World',
     '- Premier Pro <br><br> - Noice',
     ' - After Efects <br><br> - Noice',
@@ -94,7 +94,7 @@ let innertext= [
 ];
 
 let usedate =[
-    'Jun 2021 - Present',
+    'June 2021 - Present',
     'March 2019 - Present',
     'June 2071 - Present',
     'Jun 2011 - Present',
