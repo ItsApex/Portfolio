@@ -81,30 +81,30 @@ let element = [
 
 let innertext= [
     '- I have over 6 months of experience and have built a couple successful projects. This is my preferred language.<br><br> - Rating : 6/10',
-    '- C++ <br><br> - Hello World',
+    '- Have over 6 months of experience , But havent made any significant project. <br><br> - Rating : 4/10',
     '- Have over 2 years of experience and a significant number of projects under my portfolio. I went through a lot of libraries and have aquired a lot of knowelage in this language.  <br><br> -  Rating : 8/10',
-    '- flutter <br><br> - Hello World',
-    '- Premier Pro <br><br> - Noice',
-    ' - After Efects <br><br> - Noice',
-    ' - Vegas Pro <br><br> - lets go ',
-    '- Filmora <br><br> - DOnt know ',
-    '- Photoshop <br><br> - Expert ',
-    '- Illustrator <br><br> - Expert ',
-    '- Figma <br><br> - Expert '
+    '- Learned this language In just 1 month and Made an Epic App that could trace Co2. <br><br> - I am not sure how much more I have to learn, so I am not going to rate myself here.',
+    '- My all-time favorite software. I have completed numerous projects and am proficient in all shortcuts. <br><br> - Rating : 8/10',
+    '- I used this software to create all of my text elements. Its a very creative piece of software that I enjoy utilizing. <br><br> - Rating : 7/10',
+    '- I tried it out, but its not as good as Premier Pro. I used it for a few of my projects and cant remember how to use it now.<br><br> - Since I cant use it I wont rate myself',
+    '- My first Software which I used to learn Video Editing , And used to it fill potential.  <br><br> - Rating : 10/10 ',
+    '- I have done a lot of epic projects, and I know all the shortcuts. With Photoshop you can do anything to manipulate images, and have total control. <br><br> - Rating : 8/10',
+    '- Made many Vector Project like Logos, App Interface. Have beeing using this For a very long time.<br><br> - Rating : 7/10 ',
+    '- Recently Started using this software for UI/UX designing. <br><br> - Rating : 3/10 '
 ];
 
 let usedate =[
     'June 2021 - Present',
-    'March 2019 - Present',
-    'June 2071 - Present',
-    'Jun 2011 - Present',
-    'Jun 2022 - Present',
-    'March 2041 - Present',
-    'Dec 2001 - Present',
-    'Jun 2031 - Present',
-    'Jun 2024 - Present',
-    'Jun 2011 - Present',
-    'Jun 2012 - Present'
+    'June 2021 - Present',
+    'July 2019 - Present',
+    'Dec 2021 - Present',
+    'Jun 2019 - Present',
+    'Jun 2019 - Present',
+    'Dec 2016 - Present',
+    'Dec 2016 - Present',
+    'Dec 2018 - Present',
+    'Mar 2019 - Present',
+    'Dec 2021 - Present'
 ]
 
 for (let item of element) {
