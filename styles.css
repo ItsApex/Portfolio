@@ -15,40 +15,50 @@ body{
 
 /* -------------------- First Page ----------------------------------------------------------- */
 
-div.as{
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+  }
+  
+  div.as {
     margin: 0px 15px 0px 15px;
     text-decoration: none;
     font-size: 20px;
     float: left;
     position: relative;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 500;
     padding: 30px 0% 0px 5%;
     transition: 1s;
-}
-
-div.as:hover{
+  }
+  
+  div.as:hover {
     margin: 0px 15px 0px 15px;
-    color: #6CACE4;
-}
-nav{
+    color: #6cace4;
+  }
+  nav#hreflinks {
     float: right;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 200;
     padding: 30px 5% 0px 0px;
-}
-
-nav > a{
+  }
+  
+  nav#hreflinks > a {
     margin: 0px 15px 0px 15px;
     text-decoration: none;
     font-size: 20px;
     display: inline-block;
     position: relative;
     color: white;
-}
-
-nav > a:after {
-    content: '';
+  }
+  
+  nav#hreflinks > a:after {
+    content: "";
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -58,76 +68,77 @@ nav > a:after {
     background-color: #ffffff;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-}
-
-nav > a:hover:after {
+  }
+  
+  nav#hreflinks > a:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
-
-
-section.First-Page {
+  }
+  
+  section.First-Page {
     background-color: #111111;
-    height: 130vh;
+    /* height: 130vh; */
     width: auto;
     font-size: 16px;
     text-align: center;
     color: white;
-}
-
-div.text-first-page {
+  }
+  
+  div.text-first-page {
     padding-top: 15%;
     font-size: 20px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 200;
-
-}
-
-
-div.name {
-    font-family: 'Montserrat';
+  }
+  
+  div.name {
+    font-family: "Montserrat";
     font-weight: bold;
     padding-top: 20px;
-    margin:0% 26% 0% 26% ;
-    background-image: linear-gradient(to right, #9845E8, #33D2FF, #DD5789); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0% 26% 0% 26%;
+    background-image: linear-gradient(
+      to right,
+      #9845e8,
+      #33d2ff,
+      #dd5789
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-size: 100px;
     transition: 1s;
-}
-
-
-div.name:hover {
-    margin:0% 10% 0% 10% ;
+  }
+  
+  div.name:hover {
+    margin: 0% 10% 0% 10%;
     font-size: 120px;
-}
-
-
-div.about {
+  }
+  
+  div.about {
     margin-left: 5%;
     margin-right: 5%;
     padding: 50px 100px 50px 100px;
     font-size: 18px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 200;
-}
-
-
-section.buttonsone{
+  }
+  
+  section.buttonsone {
+    /* margin: auto 12p; */
+    /* ba */
     position: relative;
     display: inline-flex;
-    padding: 15% 0% 0px 0px;
-    text-align:center;
+    /* padding: 15% 0% 0px 0px; */
+    padding: 50px;
+    text-align: center;
     z-index: 0;
-}
-
-
-button#links {
+  }
+  
+  button#links {
     outline: none;
     border: none;
     font-size: 20px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-weight: 200;
     margin: 0% 5px 0% 5px;
     padding: 15px 50px 15px 50px;
@@ -137,10 +148,9 @@ button#links {
     background: #111111;
     position: relative;
     border-radius: var(--borderWidth);
-}
-
-
-button span.email {
+  }
+  
+  button span.email {
     display: inline-flex;
     height: 100%;
     width: 30px;
@@ -148,11 +158,9 @@ button span.email {
     float: left;
     /* padding: 1px 5px 1px 5px; */
     background-size: 25px 25px;
-    
-}
-
-
-button span.linkedIn {
+  }
+  
+  button span.linkedIn {
     display: inline-flex;
     height: 100%;
     width: 25px;
@@ -160,9 +168,9 @@ button span.linkedIn {
     float: left;
     /* padding: 1px 5px 1px 5px; */
     background-size: 20px 20px;
-}
-
-button span.youtube {
+  }
+  
+  button span.youtube {
     display: inline-flex;
     height: 100%;
     width: 36px;
@@ -170,9 +178,9 @@ button span.youtube {
     float: left;
     /* padding: 1px 5px 1px 5px; */
     background-size: 31px 24px;
-}
-
-button span.github {
+  }
+  
+  button span.github {
     display: inline-flex;
     height: 100%;
     width: 30px;
@@ -180,81 +188,189 @@ button span.github {
     float: left;
     /* padding: 1px 5px 1px 5px; */
     background-size: 25px 25px;
-}
-
-button.one:after {
-    content: '';
+  }
+  
+  button.one:after {
+    content: "";
     position: absolute;
     top: calc(-1 * var(--borderWidth));
     left: calc(-1 * var(--borderWidth));
     height: calc(100% + var(--borderWidth) * 2);
     width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
     border-radius: calc(2 * var(--borderWidth));
     animation: animatedgradient 3s ease infinite;
     z-index: -1;
     background-size: 400% 400%;
-}
-
-button.two:after {
-    content: '';
+  }
+  
+  button.two:after {
+    content: "";
     position: absolute;
     top: calc(-1 * var(--borderWidth));
     left: calc(-1 * var(--borderWidth));
     height: calc(100% + var(--borderWidth) * 2);
     width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg,  #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82,#f79533);
+    background: linear-gradient(
+      60deg,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82,
+      #f79533
+    );
     border-radius: calc(2 * var(--borderWidth));
     animation: animatedgradient 3s ease infinite;
     z-index: -1;
     background-size: 400% 400%;
-}
-
-button.three:after {
-    content: '';
+  }
+  
+  button.three:after {
+    content: "";
     position: absolute;
     top: calc(-1 * var(--borderWidth));
     left: calc(-1 * var(--borderWidth));
     height: calc(100% + var(--borderWidth) * 2);
     width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg,  #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82,#f79533,#f37055);
+    background: linear-gradient(
+      60deg,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82,
+      #f79533,
+      #f37055
+    );
     border-radius: calc(2 * var(--borderWidth));
     animation: animatedgradient 3s ease infinite;
     z-index: -1;
     background-size: 400% 400%;
-}
-
-
-button.four:after {
-    content: '';
+  }
+  
+  button.four:after {
+    content: "";
     position: absolute;
     top: calc(-1 * var(--borderWidth));
     left: calc(-1 * var(--borderWidth));
     height: calc(100% + var(--borderWidth) * 2);
     width: calc(100% + var(--borderWidth) * 2);
-    background: linear-gradient(60deg,  #a166ab, #5073b8, #1098ad, #07b39b, #6fba82,#f79533,#f37055,#ef4e7b );
+    background: linear-gradient(
+      60deg,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82,
+      #f79533,
+      #f37055,
+      #ef4e7b
+    );
     border-radius: calc(2 * var(--borderWidth));
     animation: animatedgradient 3s ease infinite;
     z-index: -1;
     background-size: 400% 400%;
-}
-
-
-@keyframes animatedgradient {
+  }
+  
+  @keyframes animatedgradient {
     0% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
     50% {
-        background-position: 100% 50%;
+      background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+      background-position: 0% 50%;
     }
+  }  
+
+/* ---------------------- Responsive 1nd page -------------------------- */
+
+@media(max-width: 1000px){
+    section.First-Page {
+        display: block;
+        font-size: 10vw;
+    }
+
+    section.buttonsone  {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    button#links {
+        margin: 10px;
+        width: 250px;
+        box-sizing: border-box;
+    }
+
+    div.as{
+        color: #1098ad;
+        display:flex;
+        float: none;
+        justify-content: center;        
+    }
+
+    div.text-first-page {
+        display: inline-block;
+        padding: none;
+
+    }
+
+    nav#hreflinks{
+        float: none;
+        padding: 0px;
+    }
+
+
+    nav#hreflinks > a {
+        font-size: 15px;
+      }
+
+    div.text-first-page{
+        padding: 20px 0 0 0 ;
+    }
+
+    div.name {
+        padding-top: 20px;
+        margin: 0% 26% 0% 26%;
+        font-size: 80px;
+      }
+      
+      div.name:hover {
+        margin: 0% 10% 0% 10%;
+        font-size: 100px;
+      }
+    
+    div.about{
+        font-size: 15px;
+    }
+
+    div.text-first-page{
+        font-size: 18px;
+    }
+
+
+
 }
+
 
 /* -------------------- Second Page ----------------------------------------------------------- */
 section#expereience {
-    height: auto;
+    min-height: auto;
     box-sizing: border-box;
     color: white;
     padding: 5% 0% 10% 10%;
@@ -262,12 +378,14 @@ section#expereience {
     transition: 1s;
 }
 
+
+
 nav#side-nav {
     float: left;
     position:relative;
     padding: 15px 0px 50px 0px;
     width: 20px;
-    height: auto;
+    min-height: auto;
     transition: 1s;
 }
 
@@ -379,11 +497,10 @@ ul.info{
     position: relative;
     left: 300px; 
     top: 20px;
-    width:800px;
+    max-width:800px;
     font-size: 25px;
     font-family: 'Inter';
-    font-weight: 300;   
-
+    font-weight: 300;
 }
 
 div.date{
@@ -407,9 +524,52 @@ div.Para-info{
 }
 
 
+/* -------------------------------------------Responsive 2nd Page------------------------------ */
+
+@media(max-width: 1000px){
+    section#expereience {
+        display: block;
+        padding: 0% 0% 0% 0%;
+    }
+    
+    h1.Heading{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    nav#side-nav{
+        position: relative;
+        display:inline-table;
+        justify-content: center ;
+        align-items: center;
+        left: 0px;
+        padding: 0px;
+    }
+
+    ul.info{
+        position: relative;
+        display: flex;
+        float: none;
+        left: 0;
+        top: 200px;
+    }
+
+    div.date{
+        position: relative;
+    }
+    
+    
+    div.Para-info{
+        position: relative;
+    }
+    
+}
+
 /* -------------------- Third Page ----------------------------------------------------------- */
 section#Projects {
-    height: auto;
+    min-height: auto;
     position: relative;
     box-sizing: border-box;
     margin: 5% 0 0 10% ;
@@ -434,7 +594,7 @@ div#project-cards {
 div.card {
     position: relative;
     display:block;
-    height: 450px;
+    min-height: 450px;
     width: 350px;
     /* border: 2px solid white; */
     /* border-radius: 20px; */
@@ -490,7 +650,7 @@ button.CardsButton:hover {
 section.Fourth-Page {
     border: 0px;
     color: white;
-    height: 680px;
+    min-height: 680px;
     font-family: 'Inter';
     align-content: center;
 }
@@ -504,7 +664,7 @@ div.LastCard {
     align-content: center;
     margin: 0% 15% 0 15%;
     /* border: 1px solid white; */
-    height: 550px;
+    min-height: 550px;
     width: auto;
     /* border-radius: 15px; */
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
@@ -524,7 +684,7 @@ div.LastCard:after {
     position: absolute;
     top: calc(-1 * var(--borderWidth));
     left: calc(-1 * var(--borderWidth));
-    height: calc(100% + var(--borderWidth) * 2);
+    min-height: calc(100% + var(--borderWidth) * 2);
     width: calc(100% + var(--borderWidth) * 2);
     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     border-radius: 10px;
@@ -534,12 +694,11 @@ div.LastCard:after {
   }
 
 div.contacts{
-    
     padding: 6% 0% 6% 0% ;
     /* border: rgb(255, 255, 255) 2px solid; */
     position: relative;
     width: 49%;
-    height: auto;
+    min-height: auto;
     float: left;
     text-align: center;
     font-family: 'Inter';
@@ -553,7 +712,7 @@ div.Description{
     margin: 6% 0 10% 0 ;
     position: absolute;
     left: 55.5%;
-    height: auto;
+    min-height: auto;
     width: 300px;
     font-size: 23px;
     font-weight: 300;
@@ -628,7 +787,7 @@ div#divider {
     /* border-left: 2px solid white; */
     margin-top: 52px;
     left: 50%;
-    height: 450px;
+    min-height: 450px;
     box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(220deg, #3375c2, #c548ff);
     background-origin: border-box;
