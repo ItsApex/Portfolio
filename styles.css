@@ -524,7 +524,7 @@ div.Para-info {
 
   
   h1.Heading {
-    font-size: 19px;
+      font-size: 23px;
     display: flex;
     justify-content: center;
     padding: 2% 0 2% 0;
@@ -625,21 +625,31 @@ section#Projects {
   min-height: auto;
   position: relative;
   box-sizing: border-box;
-  margin: 5% 0 0 10%;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 7% 2% 7%;
   color: white;
   transition: all 2s;
 }
 
+h1#heading-Projects{
+  padding-left: 3.3%;
+}
+
 hr.basicline {
   align-items: center;
+  color: white;
+  background-color: white;
   width: 90%;
 }
 
 div#project-cards {
-  width: 90%;
-  display: grid;
-  grid-row-gap: 10px;
-  padding: 10px;
+  width: 100%;
+  display: grid;  
+  align-items: center;
+  justify-items: center;
+  padding: 10px 20px 10px 20px;
   /* background: #b87777; */
   grid-template-columns: auto auto auto;
 }
@@ -649,14 +659,18 @@ div.card {
   display: block;
   min-height: 450px;
   width: 350px;
+  /* margin: 0% 3% 0 3%; */
   /* border: 2px solid white; */
   /* border-radius: 20px; */
   text-align: center;
+  align-items: center;
 }
+
+
 
 div.CardsText {
   position: relative;
-  padding-left: 10px;
+  text-align: center;
   font-size: 25px;
   font-family: "Inter";
   font-weight: 300;
@@ -665,11 +679,14 @@ div.CardInfo {
   position: relative;
   /* float: left; */
   /* text-align: left; */
-  padding-left: 10px;
   margin: 10% 0 0 0;
   font-size: 15px;
   font-family: "Inter";
   font-weight: 300;
+}
+
+img.project-img{
+  width: 100%;
 }
 
 button.CardsButton {
@@ -680,7 +697,9 @@ button.CardsButton {
   font-size: 20px;
   font-family: "Inter";
   font-weight: 300;
-  margin: 10px 0 0 0;
+  /* margin: 10px 0 0 0;
+  margin-left: 10px; */
+
   padding: 15px 50px 15px 50px;
   border-radius: 10px;
   box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
@@ -693,7 +712,6 @@ button.CardsButton {
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 0px 100px 100px rgb(0, 0, 0) inset;
-  margin-left: 10px;
   /* float: left; */
   transition: 0.5s;
 }
@@ -702,6 +720,64 @@ button.CardsButton:hover {
   box-shadow: none;
   color: black;
 }
+
+
+/* ---------------------------------3rd Page Responsive ---------------------------------------------- */
+
+  @media (max-width: 1000px) {
+
+    section#Projects {
+      margin: 5% 2% 2% 2%;
+    }
+
+    h1#heading-Projects{
+      padding-left: 0%;
+      font-size: 23px;
+    }
+
+    div#project-cards {
+      width: 100%;
+      display: grid;  
+      align-items:flex-start;
+      justify-items: center;
+      justify-content: center;
+      padding: 10px 0px 10px 0px;
+      /* background: #b87777; */
+      grid-template-columns: 400px;
+    }
+
+    div.card {
+      position: relative;
+      display: block;
+      min-height: 400px;
+      width: 350px;
+      text-align: center;
+    }
+
+    img.project-img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    div.CardsText{
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    div.CardInfo {
+      margin: 5% 0 0 0;
+      font-size: 15px;
+      font-family: "Inter";
+      font-weight: 300;
+    }
+
+
+    button.CardsButton {
+      font-size: 18px;
+      padding: 13px 30px 13px 30px;
+    }
+    
+} 
+
 
 /* ----------------------------------------------------------------Fourth-Page------------------------------------------------------ */
 section.Fourth-Page {
@@ -715,6 +791,12 @@ section.Fourth-Page {
 #contact-heading {
   text-align: center;
   margin: 3%;
+}
+
+hr.mobile-hr{
+  display: none;
+  width: 0%;
+  margin: 0%;
 }
 
 div.LastCard {
@@ -854,7 +936,6 @@ input.CardsButton:hover {
   color: black;
 }
 
-/* -------------------------------Forth Page------------------------------------------ */
 
 div#divider {
   position: absolute;
@@ -874,3 +955,87 @@ div#divider {
   border-left: solid 1.5px rgba(255, 255, 255, 0);
   /* border-radius: 10px;/ */
 }
+
+
+/* ------------------ page 4th responsive ----------------------  */
+
+
+@media (max-width: 1000px) {
+  div.LastCard {
+    margin: 0% 15% 15% 15%;
+  }
+
+  #contact-heading {
+    text-align: center;
+    margin: 5% 0 5% 0 ;
+  }
+  
+  div#divider {
+    display: none;
+  }
+
+  div.contact-info{
+    display: grid;
+    grid-template-columns: 400px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  div.contacts{
+    display: block;
+    align-items: center;
+    justify-items: center;
+    float:none;
+    width: 400px;
+    font-size: 18px;
+  }
+
+
+  form.forms{
+    justify-items: center;
+    align-items: center;
+  }
+
+  input.CardsButton {
+    font-size: 15px;
+  }
+
+  textarea#message{
+    height: 200px;
+  }
+
+
+  hr.mobile-hr{
+    display: flex;
+    width: 70%;
+    position: relative;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(220deg, #3375c2, #c548ff);
+    background-origin: border-box;
+    /* background-clip: content-box, border-box; */
+    /* box-shadow: 1000px 1000px 100px rgb(0, 0, 0) inset; */
+    border-top: solid 2px rgba(255, 255, 255, 0);
+    border-bottom: transparent ;
+    border-right: transparent ;
+    border-left: transparent ;
+
+    margin: 0%;
+  }
+
+
+
+  div.Description{
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    width: 250px;
+    left: 0%;
+    margin: 5% 0 5% 0 ;
+    padding: 2% 0 2% 0 ;
+    float: none;
+  }
+} 
