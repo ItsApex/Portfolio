@@ -336,7 +336,22 @@ button.four:after {
   }
 
   nav#hreflinks > a {
-    font-size: 18px;
+    font-size: 15px;
+    margin: 0 8px;
+  }
+
+
+  nav#hreflinks > a:after {
+    content: "";
+    position: absolute;
+    justify-content: center;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
   }
 
   div.text-first-page {
@@ -530,19 +545,33 @@ div.Para-info {
     padding: 2% 0 2% 0;
   }
 
-  nav#side-nav {
-    float: none;
-    position: relative;
-    padding: 5% 0% 0% 0%;
+  div.side-nav{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 
+  }
+
+  nav#side-nav {
+    position: block;
+    float:none;
+    display: inline-block;
+    padding: 5% 0% 0% 0%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     min-height: auto;
-    left: 45%;
+    right: 5%;
   }
 
   ul.menu {
     display: flex;
     flex-wrap: wrap;
+    float: none;
     justify-content: center;
+    align-items: center;
+    justify-items: center;
     margin: 0;
   }
 
@@ -755,7 +784,7 @@ button.CardsButton:hover {
     }
 
     img.project-img{
-      width: 100%;
+      width: 90%;
       border-radius: 10px;
     }
     div.CardsText{
@@ -909,6 +938,7 @@ input.CardsButton {
   outline: none;
   border: none;
   color: white;
+  background-color: #181818;
   position: relative;
   font-size: 18px;
   font-family: "Inter";
@@ -916,24 +946,13 @@ input.CardsButton {
   /* margin: 10px 0 0 0; */
   padding: 10px 20px 10px 20px;
   /* border-radius: 2px; */
-  box-shadow: 0 0 10px 0 rgba(157, 96, 212, 0.5);
-  /* border: solid 0px transparent; */
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.425),
-      rgba(255, 255, 255, 0.425)
-    ),
-    linear-gradient(45deg, #ffffff, #ffffff);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 0px 100px 100px rgb(0, 0, 0) inset;
-
-  /* float: left; */
   transition: 0.5s;
 }
 
 input.CardsButton:hover {
-  box-shadow: none;
   color: black;
+  background-color: #f6f6f6;
+
 }
 
 
@@ -962,12 +981,13 @@ div#divider {
 
 @media (max-width: 1000px) {
   div.LastCard {
-    margin: 0% 15% 15% 15%;
+    margin: 0% 8% 15% 8%;
   }
 
   #contact-heading {
     text-align: center;
     margin: 5% 0 5% 0 ;
+    font-weight: 400;
   }
   
   div#divider {
