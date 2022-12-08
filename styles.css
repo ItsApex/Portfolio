@@ -148,11 +148,20 @@ button#links {
   border-radius: var(--borderWidth);
 }
 
+button#links:hover {
+  cursor: pointer;
+}
+
+button span{
+  transition: 0.5s;
+}
+
 button span.email {
   display: inline-flex;
   height: 100%;
   width: 30px;
-  background: url("Assets/twitter.png") no-repeat;
+  background: url("Assets/twitter-color.png") no-repeat;
+  filter: brightness(0) invert(1);
   float: left;
   /* padding: 1px 5px 1px 5px; */
   background-size: 25px 25px;
@@ -162,7 +171,8 @@ button span.linkedIn {
   display: inline-flex;
   height: 100%;
   width: 25px;
-  background: url("Assets/linkedin.png") no-repeat;
+  background: url("Assets/linkedin-color.png") no-repeat;
+  filter: brightness(0) invert(1);
   float: left;
   /* padding: 1px 5px 1px 5px; */
   background-size: 20px 20px;
@@ -172,7 +182,8 @@ button span.youtube {
   display: inline-flex;
   height: 100%;
   width: 36px;
-  background: url("Assets/youtube.png") no-repeat;
+  background: url("Assets/youtube-color.png") no-repeat;
+  filter: brightness(0) invert(1);
   float: left;
   /* padding: 1px 5px 1px 5px; */
   background-size: 31px 24px;
@@ -182,10 +193,15 @@ button span.github {
   display: inline-flex;
   height: 100%;
   width: 30px;
-  background: url("Assets/github.png") no-repeat;
+  background: url("Assets/github-color.png") no-repeat;
+  filter: brightness(0) invert(1);
   float: left;
   /* padding: 1px 5px 1px 5px; */
   background-size: 25px 25px;
+}
+
+button#links:hover span{
+  filter: none;
 }
 
 button.one:after {
